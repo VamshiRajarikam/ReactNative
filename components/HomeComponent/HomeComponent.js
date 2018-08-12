@@ -1,7 +1,5 @@
-import React, {
-  Component
-} from "../../../../AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react";
-import { ScrollView, Text } from "react-native";
+import React, { Component } from "react";
+import { ScrollView, Text, View } from "react-native";
 import { Card } from "react-native-elements";
 import { DISHES } from "../../shared/dishes";
 import { PROMOTIONS } from "../../shared/Promotions";
@@ -20,6 +18,8 @@ function RenderItem(props) {
         <Text style={{ margin: 10 }}>{item.description}</Text>
       </Card>
     );
+  } else {
+    return <View />;
   }
 }
 
