@@ -1,10 +1,15 @@
-import React, { Component } from "react";
+import React, {
+  Component
+} from "../../../../AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react";
 import Menu from "../MenuComponent/MenuComponent";
 import { DISHES } from "../../shared/dishes";
 import Home from "../HomeComponent/HomeComponent";
 import Dishdetail from "../Dishdetail/Dishdetail";
 import { View, Platform } from "react-native";
-import { createStackNavigator, createDrawerNavigator } from "react-navigation";
+import {
+  createStackNavigator,
+  createDrawerNavigator
+} from "../../../../AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react-navigation";
 
 const MenuNavigator = createStackNavigator(
   {
