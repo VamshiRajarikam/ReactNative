@@ -28,7 +28,9 @@ class Menu extends Component {
         />
       );
     };
-    const { navigate } = this.props.navigation;
+    const { navigate } = this.props.navigation; // FlatList is creating ListItem with storing data,
+    // When renderMenuItem method is called, it will render items with the one data at once.
+    //ListItem will create each item with specified details with key, title etc.,
     return (
       <FlatList
         data={this.state.dishes}
